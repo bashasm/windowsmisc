@@ -4,3 +4,6 @@ Remove All User Packages
 Get-AppxPackage | Remove-AppxPackage
 
 https://www.briteccomputers.co.uk/posts/remove-all-built-in-windows-10-apps-2/
+
+add photos app back
+Get-AppxPackage -allusers Microsoft.Windows.Photos | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
