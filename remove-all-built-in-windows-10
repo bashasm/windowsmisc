@@ -1,0 +1,6 @@
+Remove All Built in Windows 10 Apps
+
+Remove All User Packages
+Get-AppxPackage | Remove-AppxPackage
+
+https://www.briteccomputers.co.uk/posts/remove-all-built-in-windows-10-apps-2/
